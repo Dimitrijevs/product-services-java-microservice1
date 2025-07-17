@@ -19,7 +19,7 @@ import io.restassured.RestAssured;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ProductServiceApplicationTests {
 
-	// cretes a mongoDB container using Docker, connects it to spring automatically
+	// cretes a mongoDB container using Docker, it connects to spring automatically
 	@ServiceConnection
 	static final MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:latest");
 
